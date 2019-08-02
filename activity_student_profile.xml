@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.paneapple.paneapple.students.Student_profile">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/paneapple_first_color"
+        app:layout_scrollFlags="scroll|enterAlways">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Profile"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back_white_icon"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="left"
+            android:layout_marginRight="@dimen/_5ssp"
+            android:id="@+id/back_login_screen_id_student"
+            />
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/card_text_color"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_light"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/student_fname_profile_id"
+
+        />
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:layout_width="@dimen/_90sdp"
+      android:layout_height="@dimen/_90sdp"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="@dimen/_5sdp"
+      android:id="@+id/student_profile_id"
+      />
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/_5sdp"
+       android:layout_marginLeft="@dimen/_30sdp"
+       android:layout_marginRight="@dimen/_30sdp"
+       android:background="@color/colorOrenge"
+       android:text="View Profile"
+       android:textColor="@color/white_color"
+       android:textAllCaps="false"
+       />
+    
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170sdp"
+        card_view:cardBackgroundColor="@color/card_search_filter_background"
+        card_view:cardCornerRadius="5dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        card_view:cardElevation="1dp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        card_view:cardUseCompatPadding="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.8"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:hint="enjamin687@gmail.com"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/black_color"
+            android:textColorHint="@color/black_color"
+            android:textSize="@dimen/_12ssp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:background="@drawable/category_search_background"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:id="@+id/search_name"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:hint="Bs IT"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/black_color"
+            android:textColorHint="@color/black_color"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/student_profile_city"
+            android:paddingLeft="@dimen/_5sdp"
+            android:background="@drawable/category_search_background"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_105sdp"
+            android:hint="Keywords"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/black_color"
+            android:textColorHint="@color/black_color"
+            android:id="@+id/student_profile_age"
+            android:textSize="@dimen/_12ssp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:background="@drawable/category_search_background"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+
+            />
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

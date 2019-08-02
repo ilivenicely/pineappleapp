@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="paneapple_first_color">#ff813b</color>
+    <color name="paneapple_second_color">#ff8968</color>
+    <color name="paneapple_third_color">#ff913f</color>
+    <color name="black_color">#000000</color>
+    <color name="white_color">#ffffff</color>
+
+    <color name="darkGrey">#ADADAD</color>
+    <color name="lightGrey">#D1D1D1</color>
+    <color name="colorBlue">#2A74CF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrayDark">#A0A0A0</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorOffwhite">#f2eeee</color>
+    <color name="colorGray">#DBB9B6B6</color>
+
+    <color name="colorOrenge">#FF8900</color>
+    <color name="colorGreen">#09C115</color>
+    <color name="colorRed">#F70617</color>
+
+    <color name="very_light_gray">#F0F0F0</color>
+    <color name="very_l">#00000000</color>
+    <color name="eighty_tranparent">#90FFFFFF</color>
+    <color name="thirtee_tranparent">#4D000000</color>
+    <color name="text_color">#666666</color>
+    <color name="rating_yellow">#FFC107</color>
+    <color name="card_search_filter_background">#98dbe5</color>
+    <color name="view_profile_color">#ffbd3a</color>
+    <color name="white_gray_color">#d2d2d2</color>
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="background_colors">#f5f5f5</color>
+    <color name="card_background_color">#A9A9A9</color>
+    <color name="card_text_color">#76C5D4</color>
+
+
+
+
+</resources>

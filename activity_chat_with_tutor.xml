@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view"
+    tools:context=".tutor.ChatWithTutorActivity">
+
+    <RelativeLayout
+        android:id="@+id/relHeader"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="?actionBarItemBackground"
+            android:padding="12dp"
+            android:onClick="Back"
+            android:src="@drawable/back_icon"
+            android:tint="@color/darkGrey" />
+
+        <RelativeLayout
+            android:id="@+id/relOtherOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgBack">
+
+            <RelativeLayout
+                android:id="@+id/relImages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/withChatUserImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/darkGrey"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/user_image" />
+                <TextView
+                    android:id="@+id/txtWithUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/withChatUserImage"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/relOtherOptions"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/darkGrey"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/relHeader"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/linearInputMessage"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearInputMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/send_msg_rel_back">
+
+
+        <ImageView
+            android:id="@+id/emoji_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:padding="6dp"
+            android:src="@drawable/smiley" />
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+            android:id="@+id/editMessage"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Type a message"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColorHint="#8f8f8e"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            app:emojiconSize="28sp" />
+
+
+        <ImageView
+            android:id="@+id/img_attachment"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:tint="#8f8f8e"
+            app:srcCompat="@drawable/attach" />
+
+
+        <ImageView
+            android:id="@+id/camera_btn"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="3dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="6dp"
+            android:tint="#666"
+            app:srcCompat="@drawable/camera_icon" />
+
+        <ImageView
+            android:id="@+id/btnSend"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="10dp"
+            android:tint="#666"
+            app:srcCompat="@drawable/btn_send" />
+
+    </LinearLayout>
+
+</RelativeLayout>

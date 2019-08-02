@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:onClick="back"
+            android:padding="3dp"
+            android:src="@drawable/back_icon"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/iv_back"
+
+            android:background="@drawable/border">
+
+            <ImageView
+                android:id="@+id/iv_seach"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/search_icon" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/iv_seach"
+                android:background="@null"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/rl_search"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/paneapple_background_logo" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_prgress_bar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header"
+        android:text="Messages"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_tutors"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_msg"
+        android:layout_marginTop="10dp">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

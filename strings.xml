@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Paneapple</string>
+    <string name="close" />
+    <string name="open" />
+    <string name="tutor_gmail_com" />
+    <string name="tutor_signup">Tutor Signup</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="robert">Abubakar</string>
+    <string name="student_gmail_com">student@gmail.com</string>
+</resources>
